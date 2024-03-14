@@ -1,23 +1,22 @@
 from django.db import models
 
 
-
 class Cat(models.Model):
     CAT_COLOR = [
-        ('pr', 'preto'),
-        ('br', 'branco'),
-        ('ci', 'cinza'),
-        ('ma', 'marrom'),
-        ('gr', 'gengibre'),
-        ('li', 'listrado'),
-        ('am', 'amarelo'),
-        ('ve', 'vermelho'),
-        ('az', 'azul'),
-        ('lar', 'laranja'),
-        ('ro', 'rosa'),
-        ('ro', 'roxo'),
-        ('ver', 'verde'),
-        ('ma', 'malhado'),
+        ('pr', 'Preto'),
+        ('br', 'Pranco'),
+        ('ci', 'Cinza'),
+        ('ma', 'Marrom'),
+        ('gr', 'Gengibre'),
+        ('li', 'Listrado'),
+        ('am', 'Amarelo'),
+        ('ve', 'Vermelho'),
+        ('az', 'Azul'),
+        ('lar', 'Laranja'),
+        ('ro', 'Rosa'),
+        ('ro', 'Roxo'),
+        ('ver', 'Verde'),
+        ('ma', 'Malhado'),
     ]
 
     CAT_BREED = (
@@ -31,7 +30,6 @@ class Cat(models.Model):
         ('sp', 'Sphynx'),
         ('bs', 'British Shorthair'),
     )
-
 
     name = models.CharField(max_length=100)
     description = models.TextField()
